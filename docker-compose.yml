@@ -1,0 +1,12 @@
+services:
+  jekyll-dev:
+    image: jekyll
+    user: 1000:1000
+    container_name: jekyll-dev
+    network_mode: host
+
+    volumes:
+      - .:/home/user/workspace
+
+    stdin_open: true
+    tty: true

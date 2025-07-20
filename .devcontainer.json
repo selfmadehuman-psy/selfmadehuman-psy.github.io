@@ -1,0 +1,9 @@
+{
+    "remoteUser": "user",
+    "name": "jekyll-dev",
+    "updateRemoteUserUID": false, 
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "jekyll-dev",
+    "workspaceFolder": "/home/user/workspace",
+    "shutdownAction": "stopCompose"
+}
