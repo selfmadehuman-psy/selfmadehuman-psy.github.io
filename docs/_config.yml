@@ -25,15 +25,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 domain: selfmadehuman-psy.github.io
-baseurl: "/docs/blog" # the subpath of your site, e.g. /blog
+# baseurl: "/docs/blog" # the subpath of your site, e.g. /blog
 url: "http://selfmadehuman-psy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: slate # default: minima
+# theme: minima
+# plugins:
+#   - jekyll-feed
+
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-feed
+- jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
