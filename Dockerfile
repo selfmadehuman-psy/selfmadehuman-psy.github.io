@@ -26,7 +26,8 @@ RUN cp /etc/skel/.bashrc /home/$USERNAME
 USER user
 
 # Install prerequisites to jekyll
-RUN sudo apt-get update && sudo apt-get install -y ruby-full build-essential zlib1g-dev
+RUN sudo apt-get update && sudo apt-get install -y \
+    ruby-full build-essential zlib1g-dev git
 
 ENV GEM_HOME="/home/$USERNAME/gems"
 ENV PATH="$GEM_HOME/bin:$PATH"
@@ -37,3 +38,4 @@ RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc && \
 
 # install jekyll
 RUN gem install jekyll bundler
+
