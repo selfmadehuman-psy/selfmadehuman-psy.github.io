@@ -31,10 +31,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: slate # default: minima
+theme: minima
 plugins:
   - jekyll-feed
-  
+
 # remote_theme: pages-themes/slate@v0.2.0
 # plugins:
 # - jekyll-feed
